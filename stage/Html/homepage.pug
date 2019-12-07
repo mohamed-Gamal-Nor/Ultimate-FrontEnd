@@ -11,4 +11,7 @@ html(lang="en")
         .page.hone-page
             include pug/layout/sidebar
             .content-area 
+                include pug/layout/header
+                .content 
                 h1 #{pageTitle}
+        include pug/layout/script

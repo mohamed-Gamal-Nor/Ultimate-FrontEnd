@@ -2,8 +2,7 @@
     box-sizing: border-box;
 }
 
-body {}
-
+//body {}
 .page {
     min-height: 100vh;
     .content-area {
@@ -12,5 +11,8 @@ body {}
         transition: 0.3s;
         will-change: width;
         float: right;
+        &.no-sidebar {
+            width: 100%;
+        }
     }
 }
