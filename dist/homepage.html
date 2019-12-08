@@ -7,6 +7,7 @@
     <title>Homepage</title>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;display=swap"/>
   </head>
   <body>
     <div class="page hone-page">
@@ -41,7 +42,22 @@
         </ul>
       </div>
       <div class="content-area"> 
-        <div class="header"> <i class="fas fa-exchange-alt fa-lg toggle-sidebar"></i></div>
+        <div class="header"> <i class="fas fa-exchange-alt fa-lg toggle-sidebar"></i>
+          <div class="dropdown notifications-container"><i class="fa fa-bell fa-lg toggle-notifications" id="notifications" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+            <div class="dropdown-menu" aria-labelledby="notifications">
+              <div class="noti-head">notifications<span>50</span></div>
+              <div class="noti-content"> 
+                <ul class="list-unstyled">
+                  <li><i class="fa fa-envelope fa-lg"></i>You Got Email From BLa</li>
+                  <li><i class="fa fa-money-bill fa-lg"></i>You Got Money From BLa</li>
+                  <li><i class="fa fa-thumbs-up fa-lg"></i>You Got Like From BLa</li>
+                  <li><i class="fa fa-money-bill fa-lg"></i>You Got Email From BLa</li>
+                </ul>
+              </div>
+              <div class="noti-foot text-center"><a href="#">View All Notifactions</a></div>
+            </div>
+          </div>
+        </div>
         <div class="container-fluid">
           <div class="content"> 
             <div class="page-heade">
