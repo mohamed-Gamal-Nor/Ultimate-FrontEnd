@@ -26,6 +26,16 @@ $(function() {
         $(this).parent().toggleClass('hide-settings');
     });
 
+    //Switch colors themes
+    var themesClasses = [];
+    $('.color-options li').each(function() {
+        themesClasses.push($(this).data('theme'))
+    });
+    $('.color-options li').on('click', function() {
+        $(this).addClass('active').siblings().removeClass('active');
+        $("body").removeClass(themesClasses.join(" ")).addClass($(this).data("theme"));
+    });
+
     var elem = document.documentElement;
 
     function openFullScreen() {

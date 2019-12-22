@@ -1,0 +1,12 @@
+$themes: ( green-theme: ( color: #27ae60), blue-theme: ( color: #2980b9), red-theme: ( color: #c0392b), darkblue-theme: ( color: #2c3e50), wistree-theme: ( color: #8e44ad));
+@each $theme,
+$map in $themes {
+    .#{$theme} {
+        .classname {
+            color: map-get($map, color);
+        }
+        .page .page-head .page-title {
+            color: map-get($map, color);
+        }
+    }
+}
