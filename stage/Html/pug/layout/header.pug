@@ -22,3 +22,34 @@
             | You Got Email From BLa
       .noti-foot.text-center: a(href="#") View All Notifactions
   i.fa.fa-expand.fa-lg.toggle-fullscreen.header-icon
+  .dropdown.usermenu-container
+    .username#usermenu( data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+      img.avatar.rounded-circle(src="imgs/avatar.jpeg",alt="User Avatar")
+      span.user Mohamed Jemy
+      i.fa.fa-angle-down.fa-lg
+    .dropdown-menu.dropdown-menu-right(aria-labelledby='usermenu')
+      .user-info
+        h3 Mohamed Jemy
+        p Premium Member
+      hr
+      ul.activities-list.list-unstyled
+        li Added Commnet on Post "How To Make Bla Bla Bla"
+        li Created Post on Category "Science"
+        li Created Chart on Charts Page
+        li Added Commnet on Post "How To Make Bla Bla Bla Two"
+      hr
+      .row.usermenu-links
+        .col
+          .link-box 
+            i.fa.fa-cog.fa-lg.fa-fw
+            span Settings
+        .col
+          .link-box 
+            i.fa.fa-user.fa-lg.fa-fw
+            span My Profile
+        .col
+            .link-box 
+              i.fa.fa-power-off.fa-lg.fa-fw
+              span Logout      
+
+
